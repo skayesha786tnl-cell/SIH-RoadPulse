@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice Report - RoadPulse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            🚧 RoadPulse
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="map.html">Road Hazards</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Voice Report -->
+    <main class="voice-report-page">
+
+        <div class="voice-report-container">
+
+            <div class="big-mic">
+                🎤
+            </div>
+
+            <h1>Voice Road Report</h1>
+
+            <p class="voice-description">
+                No login required. Simply speak about the pothole
+                and help us make roads safer.
+            </p>
+
+
+            <!-- Language -->
+            <div class="language-section">
+
+                <label for="language">
+                    🌐 Select Language
+                </label>
+
+                <select id="language">
+
+                    <option value="en-IN">
+                        English
+                    </option>
+
+                    <option value="te-IN">
+                        తెలుగు (Telugu)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Voice Button -->
+            <button
+                id="startVoice"
+                class="big-voice-btn"
+            >
+                🎤 Start Speaking
+            </button>
+
+
+            <p id="voiceStatus">
+                Press the button and speak your complaint.
+            </p>
+
+
+            <!-- Transcript -->
+            <div class="transcript-box">
+
+                <label>
+                    📝 Your Complaint
+                </label>
+
+                <textarea
+                    id="voiceText"
+                    rows="5"
+                    placeholder="Your spoken complaint will appear here..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- Photo -->
+            <div class="voice-form-group">
+
+                <label for="voiceImage">
+                    📷 Upload Pothole Photo
+                </label>
+
+                <input
+                    type="file"
+                    id="voiceImage"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <!-- Location -->
+            <div class="voice-form-group">
+
+                <label>
+                    📍 Location
+                </label>
+
+                <button
+                    id="voiceLocationBtn"
+                    class="voice-location-btn"
+                >
+                    📍 Get My Location
+                </button>
+
+                <p id="voiceLocationStatus">
+                    Location not detected.
+                </p>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button
+                id="voiceSubmit"
+                class="voice-submit-btn"
+            >
+                🚧 Submit Voice Report
+            </button>
+
+
+            <p class="no-login-message">
+                🔓 No account or login is required.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 RoadPulse | AI-Powered Road Safety System
+        </p>
+
+    </footer>
+
+
+    <script src="js/voice-report.js"></script>
+
+</body>
+
+</html>
