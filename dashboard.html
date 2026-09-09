@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard - RoadPulse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚧 RoadPulse
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="map.html">Road Hazards</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard-page">
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-heading">
+                <div>
+                    <h1>Welcome to RoadPulse 👋</h1>
+                    <p>Track your reports and help make roads safer.</p>
+                </div>
+
+                <a href="report.html" class="dashboard-report-btn">
+                    📷 New Report
+                </a>
+            </div>
+
+
+            <!-- Statistics -->
+
+            <section class="stats-container">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📋</div>
+                    <h3>Total Reports</h3>
+                    <strong>12</strong>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🔄</div>
+                    <h3>Pending Reports</h3>
+                    <strong>4</strong>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <h3>Completed Reports</h3>
+                    <strong>8</strong>
+                </div>
+
+                <div class="stat-card points-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3>Road Points</h3>
+                    <strong>120</strong>
+                </div>
+
+            </section>
+
+
+            <!-- Complaints -->
+
+            <section class="dashboard-section">
+
+                <div class="section-title">
+
+                    <h2>📋 My Complaints</h2>
+
+                    <a href="report.html">
+                        + New Report
+                    </a>
+
+                </div>
+
+
+                <div class="complaints-table">
+
+                    <div class="table-header">
+                        <span>Complaint ID</span>
+                        <span>Severity</span>
+                        <span>Location</span>
+                        <span>Status</span>
+                    </div>
+
+
+                    <div class="complaint-row">
+
+                        <span>RP10234</span>
+
+                        <span class="severity high">
+                            High
+                        </span>
+
+                        <span>Bus Stop Road</span>
+
+                        <span class="status progress">
+                            In Progress
+                        </span>
+
+                    </div>
+
+
+                    <div class="complaint-row">
+
+                        <span>RP10235</span>
+
+                        <span class="severity medium">
+                            Medium
+                        </span>
+
+                        <span>Main Road</span>
+
+                        <span class="status completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="complaint-row">
+
+                        <span>RP10236</span>
+
+                        <span class="severity low">
+                            Low
+                        </span>
+
+                        <span>Village Road</span>
+
+                        <span class="status reported">
+                            Reported
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Repair Tracking -->
+
+            <section class="dashboard-section">
+
+                <h2>🔄 Repair Tracking</h2>
+
+                <div class="tracking-card">
+
+                    <div class="tracking-info">
+
+                        <h3>RP10234</h3>
+
+                        <p>
+                            Bus Stop Road
+                        </p>
+
+                    </div>
+
+
+                    <div class="tracking">
+
+                        <div class="track-step active">
+                            <div>✓</div>
+                            <span>Reported</span>
+                        </div>
+
+                        <div class="track-line active-line"></div>
+
+                        <div class="track-step active">
+                            <div>✓</div>
+                            <span>Assigned</span>
+                        </div>
+
+                        <div class="track-line active-line"></div>
+
+                        <div class="track-step active">
+                            <div>🔧</div>
+                            <span>In Progress</span>
+                        </div>
+
+                        <div class="track-line"></div>
+
+                        <div class="track-step">
+                            <div>✓</div>
+                            <span>Repaired</span>
+                        </div>
+
+                        <div class="track-line"></div>
+
+                        <div class="track-step">
+                            <div>✓</div>
+                            <span>Completed</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Road Points -->
+
+            <section class="dashboard-section">
+
+                <h2>🏆 Road Points</h2>
+
+                <div class="points-container">
+
+                    <div class="points-main">
+
+                        <span class="trophy">
+                            🏆
+                        </span>
+
+                        <div>
+                            <p>Your Road Points</p>
+                            <strong>120</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rank-box">
+
+                        <p>Your Rank</p>
+
+                        <strong>#8</strong>
+
+                    </div>
+
+
+                    <div class="reward-box">
+
+                        <p>Next Reward</p>
+
+                        <strong>200 Points</strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Quick Actions -->
+
+            <section class="dashboard-section">
+
+                <h2>⚡ Quick Actions</h2>
+
+                <div class="quick-actions">
+
+                    <a href="report.html">
+                        📷 Report Pothole
+                    </a>
+
+                    <a href="voice-report.html">
+                        🎤 Voice Report
+                    </a>
+
+                    <a href="map.html">
+                        🗺️ View Hazards
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 RoadPulse | AI-Powered Road Safety System
+        </p>
+
+    </footer>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
